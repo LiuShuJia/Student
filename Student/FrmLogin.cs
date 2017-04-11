@@ -22,7 +22,7 @@ namespace Student
             string userName = this.txtUserName.Text.Trim ();
             string key = this.txtKey.Text.Trim();
             string strSQL = @"select log";
-            int row = Convert.ToInt32(helper.ExecuteNonQuery(strSQL, CommandType.Text, new SqlParameter("@StudentNo", StuNo);
+           // int row = Convert.ToInt32(helper.ExecuteNonQuery(strSQL, CommandType.Text, new SqlParameter("@StudentNo", StuNo));
          
         }
     }
