@@ -107,6 +107,7 @@
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "增加学生";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSelect
             // 
@@ -116,6 +117,7 @@
             this.btnSelect.TabIndex = 15;
             this.btnSelect.Text = "查询";
             this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // cboClass
             // 
@@ -187,20 +189,23 @@
             // tsmiModify
             // 
             this.tsmiModify.Name = "tsmiModify";
-            this.tsmiModify.Size = new System.Drawing.Size(124, 22);
+            this.tsmiModify.Size = new System.Drawing.Size(152, 22);
             this.tsmiModify.Text = "修改";
+            this.tsmiModify.Click += new System.EventHandler(this.tsmiModify_Click);
             // 
             // tsmiDel
             // 
             this.tsmiDel.Name = "tsmiDel";
-            this.tsmiDel.Size = new System.Drawing.Size(124, 22);
+            this.tsmiDel.Size = new System.Drawing.Size(152, 22);
             this.tsmiDel.Text = "删除";
+            this.tsmiDel.Click += new System.EventHandler(this.tsmiDel_Click);
             // 
             // tsmiModifyPwd
             // 
             this.tsmiModifyPwd.Name = "tsmiModifyPwd";
-            this.tsmiModifyPwd.Size = new System.Drawing.Size(124, 22);
+            this.tsmiModifyPwd.Size = new System.Drawing.Size(152, 22);
             this.tsmiModifyPwd.Text = "修改密码";
+            this.tsmiModifyPwd.Click += new System.EventHandler(this.tsmiModifyPwd_Click);
             // 
             // FrmSelectStudent
             // 
@@ -218,6 +223,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmSelectStudent";
             this.Text = "学生信息管理界面";
+            this.Load += new System.EventHandler(this.FrmSelectStudent_Load);
             this.tmsMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
