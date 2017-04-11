@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace Student
 {
@@ -19,7 +21,7 @@ namespace Student
         private DBHelper helper = new DBHelper();
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            string userName = this.txtUserName.Text.Trim ();
+            string userName = this.txtUserName.Text.Trim();
             string key = this.txtKey.Text.Trim();
             string strSQL = @"select log";
            // int row = Convert.ToInt32(helper.ExecuteNonQuery(strSQL, CommandType.Text, new SqlParameter("@StudentNo", StuNo));
