@@ -16,5 +16,10 @@ namespace Student
         {
             InitializeComponent();
         }
+
+        private void btnYes_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("完成添加");
+        }
     }
 }
